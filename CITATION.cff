@@ -1,0 +1,56 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Resolution Upscaling of 3D Time-of-Flight Sensor by Fusion with RGB Camera
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Yannick
+    family-names: Waelti
+    email: yannick.waelti@zhaw.ch
+    orcid: 'https://orcid.org/0009-0001-9529-7251'
+    affiliation: Zurich University of Applied Sciences
+  - given-names: Matthias
+    family-names: Ludwig
+    orcid: 'https://orcid.org/0009-0009-4586-8616'
+    affiliation: Zurich University of Applied Sciences
+  - given-names: Josquin
+    family-names: Rosset
+    affiliation: Zurich University of Applied Sciences
+  - given-names: Teddy
+    family-names: Loeliger
+    affiliation: Zurich University of Applied Sciences
+repository-code: >-
+  https://github.com/isc-zhaw/Efficient-Depth-and-RGB-Camera-Fusion-Algorithm
+abstract: >-
+3D time-of-flight (3D ToF) cameras enable depth
+perception but typically suffer from low resolution. To increase
+the resolution of the 3D ToF depth map, a fusion approach with a
+high-resolution RGB camera featuring a new edge extrapolation
+algorithm is proposed, implemented and benchmarked here.
+Despite the presence of artifacts in the output, the resulting high-
+resolution depth maps exhibit very clean edges when compared
+to other state-of-the-art spatial upscaling methods. The new
+algorithm first interpolates the depth map of the 3D ToF camera
+and combines it with an RGB image to extract an edge map.
+The blurred edges of the depth map are then replaced by an
+extrapolation from neighboring pixels for the final high-resolution
+depth map. A custom 3D ToF and RGB fusion hardware is
+used to create a new 3D ToF dataset for evaluating the image
+quality of the upscaling approach. In addition, the algorithm is
+benchmarked using the Middlebury 2005 stereo vision dataset.
+The proposed edge extrapolation algorithm typically achieves an
+effective upscaling factor greater than 2 in both the x and y
+directions.
+keywords:
+  - 3D Time-of-Flight (3D ToF)
+  - Sensor fusion
+  - Resolution upscaling
+  - Depth map upsampling
+  - Edge Detection
+  - Edge extrapolation
+license: MIT
